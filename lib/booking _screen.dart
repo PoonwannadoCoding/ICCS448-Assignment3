@@ -12,6 +12,26 @@ class BookingSeat extends StatelessWidget{
         backgroundColor: Colors.black,
         title: const Text('BOOKING SEAT SCREEN'),
       ),
+
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Container(
+              child: const Text(
+                "Due to COVID 19 pandemic MINOR CINEPLEX have to shutdown the business",
+                style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 30
+                ),
+              ),
+            )
+          ],
+        ),
+      ),
+
+
     );
   }
 }
