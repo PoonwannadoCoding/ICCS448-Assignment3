@@ -15,12 +15,15 @@ class TrailerScreen extends StatelessWidget{
 
       body: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Container(
               child: const Text(
                 "Trailer",
                 style: TextStyle(
-                  fontSize: 25
+                  color: Colors.white,
+                  fontSize: 30
                 ),
               ),
             )
