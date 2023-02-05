@@ -8,6 +8,7 @@ class ComingSoon extends StatelessWidget{
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
+      backgroundColor: Colors.blueGrey[900],
       appBar: AppBar(
         backgroundColor: Colors.black,
         title: const Text('COMING SOON SCREEN'),
@@ -18,8 +19,8 @@ class ComingSoon extends StatelessWidget{
             Container(
               child: TextButton(
                 style: TextButton.styleFrom(
-                  foregroundColor: Colors.deepOrangeAccent,
-                  backgroundColor: Colors.orangeAccent,
+                  foregroundColor: Colors.black,
+                  backgroundColor: Colors.orange,
                 ),
                 onPressed: () {
                   print('will load a detail screen');

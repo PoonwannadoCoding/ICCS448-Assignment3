@@ -7,6 +7,7 @@ class TimeSelectionScreen extends StatelessWidget{
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
+      backgroundColor: Colors.blueGrey[900],
       appBar: AppBar(
         backgroundColor: Colors.black,
         title: const Text('TIME SELECTION SCREEN'),
@@ -19,8 +20,8 @@ class TimeSelectionScreen extends StatelessWidget{
             Container(
               child: TextButton(
                 style: TextButton.styleFrom(
-                  foregroundColor: Colors.deepOrange,
-                  backgroundColor: Colors.grey,
+                  foregroundColor: Colors.black,
+                  backgroundColor: Colors.orange,
                 ),
                 onPressed: (){
                   print('will go to booking screen');

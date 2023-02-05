@@ -7,6 +7,7 @@ class TrailerScreen extends StatelessWidget{
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
+      backgroundColor: Colors.blueGrey[900],
       appBar: AppBar(
         backgroundColor: Colors.black,
         title: const Text('TRAILER'),
@@ -18,7 +19,9 @@ class TrailerScreen extends StatelessWidget{
             Container(
               child: const Text(
                 "Trailer",
-                style: ,
+                style: TextStyle(
+                  fontSize: 25
+                ),
               ),
             )
           ],

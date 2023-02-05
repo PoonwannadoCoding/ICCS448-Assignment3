@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'time_selection_screen.dart';
+
 
 class HomeScreen extends StatelessWidget{
 
@@ -12,46 +11,92 @@ class HomeScreen extends StatelessWidget{
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
+      backgroundColor: Colors.blueGrey[900],
       appBar: AppBar(
         backgroundColor: Colors.black,
-        title: const Text('MOVIE LIST SCREEN'),
+        title: const Text('MINOR CINEPLEX'),
       ),
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
+
+
           children: [
-            //
-            // Container(
-            //   child: Row(
-            //     children: [
-            //       createMovie(1),
-            //     ],
-            //   ),
-            // ),
-            //
+            Container(
+              margin: const EdgeInsets.only(left: 5,top: 50,right: 5,bottom: 50),
+              child: Text("MOVIE LIST",
+              style: TextStyle(
+                fontSize: 50,
+                color: Colors.orange
+              ),
+              ),
+            ),
 
             Container(
-             child: SizedBox(
-               child: TextButton(
-                 style: TextButton.styleFrom(
-                   foregroundColor: Colors.black,
-                   backgroundColor: Colors.orange,
+              margin: const EdgeInsets.only(left: 5,top: 10,right: 5,bottom: 100),
+              height: 300,
+              child: ListView(
+                scrollDirection: Axis.horizontal,
 
-                 ),
-                 onPressed: () {
-                   print('will load a detail screen');
-                   Navigator.pushNamed(context, '/time_selection');
+                children: [
+                  Container(
 
-                 },
-                 child: const Text('Time Selection',
-                   style: TextStyle(
-                       fontSize: 20
-                   ),
-                 ),
-               ),
-             ),
+                    child: SizedBox(
+                      child: IconButton(
+                        style: TextButton.styleFrom(
+                          foregroundColor: Colors.black,
+                          backgroundColor: Colors.orange,
+                        ),
+                        icon: Image.asset("assets/movie1.jpg"),
+                        iconSize: 200,
+                        onPressed: () {
+                          print('will load a detail screen');
+                          Navigator.pushNamed(context, '/time_selection');
+                        },
+                      ),
+                    ),
+                  ),
+
+                  Container(
+                    child: SizedBox(
+                      child: IconButton(
+                        style: TextButton.styleFrom(
+                          foregroundColor: Colors.black,
+                          backgroundColor: Colors.orange,
+                        ),
+                        icon: Image.asset("assets/movie2.jpg"),
+                        iconSize: 200,
+                        onPressed: () {
+                          print('will load a detail screen');
+                          Navigator.pushNamed(context, '/time_selection');
+                        },
+                      ),
+                    ),
+                  ),
+
+                  Container(
+                    child: SizedBox(
+                      child: IconButton(
+                        style: TextButton.styleFrom(
+                          foregroundColor: Colors.black,
+                          backgroundColor: Colors.orange,
+                        ),
+                        icon: Image.asset("assets/movie3.jpg"),
+                        iconSize: 180,
+                        onPressed: () {
+                          print('will load a detail screen');
+                          Navigator.pushNamed(context, '/time_selection');
+                        },
+                      ),
+                    ),
+                  ),
+
+
+                ],
+              ),
             ),
+
+
+
 
             Container(
               child: SizedBox(

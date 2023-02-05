@@ -7,6 +7,7 @@ class BookingSeat extends StatelessWidget{
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
+      backgroundColor: Colors.blueGrey[900],
       appBar: AppBar(
         backgroundColor: Colors.black,
         title: const Text('BOOKING SEAT SCREEN'),
