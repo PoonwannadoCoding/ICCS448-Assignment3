@@ -96,7 +96,7 @@ class HomeScreen extends StatelessWidget{
 
             Container(
               margin: const EdgeInsets.only(left: 5,top: 50,right: 5,bottom: 25),
-              child: const Text("COMING SOON",
+              child: const Text("COMING SOON RECOMMEND",
                 style: TextStyle(
                     fontSize: 50,
                     color: Colors.orange
@@ -122,7 +122,7 @@ class HomeScreen extends StatelessWidget{
                         iconSize: 200,
                         onPressed: () {
                           print('will load a coming soon screen');
-                          Navigator.pushNamed(context, '/coming_soon_screen');
+                          Navigator.pushNamed(context, '/trailer_screen');
                         },
 
                       ),
@@ -143,7 +143,7 @@ class HomeScreen extends StatelessWidget{
                         iconSize: 200,
                         onPressed: () {
                           print('will load a coming soon screen');
-                          Navigator.pushNamed(context, '/coming_soon_screen');
+                          Navigator.pushNamed(context, '/trailer_screen');
                         },
 
                       ),
@@ -164,7 +164,7 @@ class HomeScreen extends StatelessWidget{
                         iconSize: 200,
                         onPressed: () {
                           print('will load a coming soon screen');
-                          Navigator.pushNamed(context, '/coming_soon_screen');
+                          Navigator.pushNamed(context, '/trailer_screen');
                         },
 
                       ),
@@ -176,19 +176,38 @@ class HomeScreen extends StatelessWidget{
                 ],
 
               ),
-            )
+            ),
+
+            Container(
+              child: SizedBox(
+
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                    foregroundColor: Colors.black,
+                    backgroundColor: Colors.orange,
+                  ),
+
+                  onPressed: () {
+                    print('will load a coming soon screen');
+                    Navigator.pushNamed(context, '/coming_soon_screen');
+                  }, child: const Text("MORE COMING \n"
+                    "SOON MOVIE",
+                style: TextStyle(
+                  fontSize: 26
+                ),
+                ),
+
+                ),
+              ),
+
+            ),
+
 
           ],
 
         ),
       )
 
-
-      // body: Center(
-      //   child: Column(
-      //
-      //   ),
-      // ),
 
     );
   }

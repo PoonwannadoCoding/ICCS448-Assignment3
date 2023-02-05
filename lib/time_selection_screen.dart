@@ -10,7 +10,7 @@ class TimeSelectionScreen extends StatelessWidget{
       backgroundColor: Colors.blueGrey[900],
       appBar: AppBar(
         backgroundColor: Colors.black,
-        title: const Text('TIME SELECTION SCREEN'),
+        title: const Text('MINOR CINEPLEX'),
       ),
       body: Center(
 
